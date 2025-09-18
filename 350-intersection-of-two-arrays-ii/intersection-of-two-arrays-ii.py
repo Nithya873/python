@@ -1,10 +1,10 @@
 class Solution:
     def intersect(self, nums1: List[int], nums2: List[int]) -> List[int]:
         l=[]
-        nums2_copy=nums2.copy()
+        
         for i in nums1:
 
-            if i in nums2_copy:
+            if i in nums2:
                 l.append(i)
-                nums2_copy.remove(i)
+                nums2.remove(i)
         return  l        
