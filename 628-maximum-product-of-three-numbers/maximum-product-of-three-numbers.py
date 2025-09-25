@@ -1,6 +1,6 @@
 class Solution:
     def maximumProduct(self, nums: List[int]) -> int:
-        nums.sort(reverse=False)
+        nums.sort()
         o1=nums[0]*nums[1]*nums[-1]
         o2=nums[-1]*nums[-2]*nums[-3]
         l=max(o1,o2)
