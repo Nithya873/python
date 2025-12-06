@@ -13,7 +13,7 @@ class Solution:
                 l+=1
             elif i=="R":
                 r+=1
-        if r-l==0 and u-d==0:
+        if r==l and u==d:
             return True
         else:
             return False            
