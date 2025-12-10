@@ -5,7 +5,7 @@ class Solution:
         
 
         for i in range(len(nums)):
-            k=nums[i]==i%10
+            
             
             if nums[i]==i%10:
                 li.append(i)
