@@ -3,9 +3,9 @@ class Solution:
         p=0
         n=0
         for i in range(len(nums)):
-            if nums[i]>0 and nums[i]!=0:
+            if nums[i]>0:
                 p+=1
-            if nums[i]<0 and nums[i]!=0:
+            if nums[i]<0:
                 n+=1
         return max(p,n)            
         
