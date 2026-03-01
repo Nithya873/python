@@ -1,1 +1,1 @@
-<h2>substrings-of-size-three-with-distinct-characters Notes</h2><hr>[ Time taken: 1d 10hrs 35m 18s ]
+<h2>substrings-of-size-three-with-distinct-characters Notes</h2><hr>[ Time taken: 1d 10hrs 50m 45s ]
