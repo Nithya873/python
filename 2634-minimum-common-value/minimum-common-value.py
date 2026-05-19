@@ -9,11 +9,11 @@ class Solution:
 
             if nums1[i] in a:
                 
-                li.append(nums1[i])
+                return nums1[i]
                 
-        if len(li)==0:
-            return -1
-        return li[0]    
+        
+        return -1
+            
               
                 
                       
