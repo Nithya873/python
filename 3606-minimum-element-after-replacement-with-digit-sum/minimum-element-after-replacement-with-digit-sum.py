@@ -7,9 +7,9 @@ class Solution:
             j=sum(h)
 
             li.append(j)
-        g=sorted(li)    
+           
       
-        return g[0]
+        return min(li)
 
               
 
