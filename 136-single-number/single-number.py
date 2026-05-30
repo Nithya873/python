@@ -6,7 +6,7 @@ class Solution:
                 nici[nums[i]]+=1
             else:
                 nici[nums[i]]=1
-        c=0        
+              
         for key,vl in nici.items():
             if vl ==1:
                 
