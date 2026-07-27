@@ -4,25 +4,15 @@ class Solution:
         Do not return anything, modify nums in-place instead.
 
         """
-        li=[]
         
-        g=0
         k=k%len(nums)
-    
-        for i in range(len(nums)-1,-1,-1):
-            if g<k:
-                li.append(nums[i])
-                g+=1
-          
-        
-        for j in range(k):
-            
-            nums.pop()
-        li.reverse()    
-
-
+        nums[-k:]=reversed(nums[-k:])  
+        nums[:-k]=reversed(nums[:-k])
+        return nums.reverse()
                 
-        nums[:]=li+nums
+        
+            
+
             
                  
 
