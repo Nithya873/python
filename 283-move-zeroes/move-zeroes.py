@@ -1,16 +1,23 @@
-from typing import List
-
 class Solution:
     def moveZeroes(self, nums: List[int]) -> None:
-        j = 0  
+        """
+        Do not return anything, modify nums in-place instead.
+        """
+        j=-1
         for i in range(len(nums)):
-            if nums[i] != 0:
-                nums[j] = nums[i]
-                j += 1
-        
-        for i in range(j, len(nums)):
-            nums[i] = 0
-
-
-        
+            if nums[i]==0:
+                j=i
+                break
+        if j==-1:
+            return nums
+        for k in range(j+1,len(nums)):
+            if nums[k]!=0:
+                nums[k],nums[j]=nums[j],nums[k]
+                j+=1
+        return nums
     
+        
+
+        
+
+        
