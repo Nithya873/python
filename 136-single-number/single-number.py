@@ -1,16 +1,15 @@
 class Solution:
     def singleNumber(self, nums: List[int]) -> int:
-        nici={}
+        dici={}
         for i in range(len(nums)):
-            if nums[i] in nici:
-                nici[nums[i]]+=1
+            if nums[i] not in dici:
+                dici[nums[i]]=1
             else:
-                nici[nums[i]]=1
-              
-        for key,vl in nici.items():
-            if vl ==1:
-                
-                return key     
+                dici[nums[i]]+=1
+        for key,value in dici.items():
+            if value==1:
+                return key
+          
 
                      
         
