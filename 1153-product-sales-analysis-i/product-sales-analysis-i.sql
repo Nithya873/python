@@ -1,6 +1,4 @@
-# Write your MySQL q
-select Product.product_name,Sales.year,Sales.price
-from Sales
-join Product
-on Sales.product_id=Product.product_id
- 
+select product_name , year,price
+from Sales s
+join product p
+on s.product_id=p.product_id;
